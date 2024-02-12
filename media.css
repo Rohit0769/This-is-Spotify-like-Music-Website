@@ -1,0 +1,440 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width:1200px) {
+    .container {
+        width: 100%;
+    }
+
+    .song {
+        width: 70%;
+        height: 116%;
+    }
+
+    .song .content {
+        height: 33%;
+        margin-left: 22px;
+    }
+
+    .song nav ul li {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .song nav {
+        margin-left: 20px;
+    }
+
+    .menu .menu_song {
+        height: 734px;
+        margin-top: 33px;
+    }
+
+    .song nav .search {
+        position: relative;
+        padding: 2px 5px;
+    }
+
+    .song .content p {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+    .menu_song li .bi {
+        right: 3px;
+        top: 5px;
+    }
+
+    .song .content .buttons button {
+        width: 100px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+    .song::before {
+        width: 45%;
+        top: -33px;
+        right: -111px;
+        height: 300px;
+    }
+
+
+    .menu {
+        width: 30%;
+        z-index: 9;
+        height: 116%;
+        transition: 1s linear;
+    }
+
+
+}
+
+@media only screen and (max-width:950px) {
+    .container {
+        width: 100%;
+    }
+
+    .song {
+        width: 100%;
+        height: 109%;
+        z-index: -1;
+    }
+
+    .song::before {
+        right: 0;
+        width: 48%;
+        top: 0px;
+    }
+
+    .song .content {
+        height: 27%;
+        margin-left: 22px;
+    }
+
+    .song nav ul li {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .song nav {
+        margin-left: 20px;
+    }
+
+    .menu .menu_song {
+        height: 734px;
+        margin-top: 33px;
+    }
+
+
+    .song nav .search {
+        position: relative;
+        padding: 2px 5px;
+    }
+
+    .song .content p {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+
+
+    .menu_song li .bi {
+        right: 3px;
+        top: 5px;
+    }
+
+
+    .menu {
+        width: 35%;
+        position: absolute;
+        z-index: 9;
+        height: 107%;
+        transition: 1s linear;
+    }
+
+    .activemenu {
+        transform: translateX(-100%);
+    }
+
+    .menu h6 {
+        position: absolute;
+        right: -40px;
+        bottom: 11px;
+        border-radius: 0px 10px 10px 0px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        font-size: 18px;
+        background: #111727;
+        transition: 1s linear;
+    }
+
+    .menu h6 .bi {
+        display: block;
+    }
+
+
+}
+
+@media only screen and (max-width:750px) {
+    .container {
+        width: 100%;
+    }
+
+    .song {
+        width: 100%;
+        height: 109%;
+        z-index: 0;
+    }
+
+    .song::before {
+        display: none;
+    }
+
+    .song .content {
+        height: 27%;
+        margin-left: 22px;
+    }
+
+    .song nav ul li {
+        font-size: 12px;
+        margin-right: 15px;
+    }
+
+    .song nav {
+        margin-left: 20px;
+    }
+
+    .menu .menu_song {
+        height: 734px;
+        margin-top: 33px;
+    }
+
+
+    .song nav .search {
+        position: relative;
+        padding: 2px 5px;
+    }
+
+    .song .content p {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+    .menu_song li .bi {
+        right: 3px;
+        top: 5px;
+    }
+
+    .song .content .buttons button {
+        width: 100px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+
+    .menu {
+        width: 73%;
+        position: absolute;
+        z-index: 999;
+        height: 107%;
+        transition: 1s linear;
+    }
+
+    .activemenu {
+        transform: translateX(-100%);
+    }
+
+    .menu h6 {
+        position: absolute;
+        right: -40px;
+        bottom: 11px;
+        border-radius: 0px 10px 10px 0px;
+        width: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35px;
+        font-size: 18px;
+        background: #111727;
+        transition: 1s linear;
+    }
+
+    .menu h6 .bi {
+        display: block;
+    }
+
+    .materplay .icons {
+        display: flex;
+        font-size: 20px;
+        position: absolute;
+        top: -35px;
+        right:42%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .materplay .icons::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 122px;
+        background-color: #111727;
+        z-index: -1;
+        border-radius: 90% 90% 0 0;
+    }
+    .icons .bi{
+        position: relative;
+        left: 22px;
+    }
+    .materplay .wave {
+        position: absolute;
+        top: -78px;
+        left: 50%;
+
+    }
+    .materplay #currentTime {
+        margin: 0px 0px 0px 15px;
+    }
+
+
+
+}
+@media only screen and (max-width:450px) {
+    .container {
+        width: 100%;
+    }
+
+    .song::before {
+        display: none;
+    }
+
+    .song .content {
+        height: 27%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .song nav ul li {
+        font-size: 10px;
+        margin-right: 12px;
+    }
+
+    .song .content p {
+        font-size: 10px;
+        text-align: center;
+    }
+    .song nav {
+        margin-left: 20px;
+    }
+
+    .menu .menu_song {
+        height: 734px;
+        margin-top: 33px;
+    }
+
+
+    .song nav .search {
+        position: relative;
+        padding: 2px 5px;
+    }
+    .song nav .search input{
+        font-size: 11px;
+    }
+    .song nav .search .bi {
+        font-size: 10px;
+        padding: 4px 0px 0px 12px;
+    }
+
+    .song .content p {
+        font-size: 10px;
+        margin-right: 2px;
+    }
+
+    .menu_song li .bi {
+        right: 3px;
+        top: 5px;
+    }
+
+    .song .content .buttons button {
+        width: 100px;
+        height: 25px;
+        font-size: 11px;
+    }
+
+
+    .menu {
+        width: 73%;
+        position: absolute;
+        z-index: 999;
+        height: 107%;
+        transition: 1s linear;
+    }
+
+    .activemenu {
+        transform: translateX(-100%);
+    }
+
+
+    .menu h6 .bi {
+        display: block;
+    }
+
+    .materplay .icons {
+        display: flex;
+        font-size: 20px;
+        position: absolute;
+        top: -35px;
+        right:42%;
+        margin: 0;
+        align-items: center;
+    }
+
+    .materplay .icons::before {
+        content: "";
+        position: absolute;
+        width: 200px;
+        height: 122px;
+        background-color: #111727;
+        z-index: -1;
+        border-radius: 90% 90% 0 0;
+    }
+    .icons .bi{
+        position: relative;
+        left: 22px;
+    }
+    .materplay .wave {
+        position: absolute;
+        top: -78px;
+        left: 46%;
+
+    }
+    .materplay #currentTime {
+        margin: 0px 0px 0px 15px;
+    }
+    .materplay .icons {
+        top: -35px;
+        right:40%;
+    }
+
+
+
+}
+
+@media only screen and (max-width:389px){
+    .materplay .wave {
+        left: 46%;
+
+    }
+
+    .materplay .icons {
+        top: -35px;
+        right:40%;
+    }
+    .menu {
+        width: 80%;
+        transition: 1s linear;
+    }
+    .song .content p {
+        font-size: 9px;
+    }
+
+    .song nav ul li {
+        font-size: 8px;
+        margin-right: 10px;
+    }
+
+    .song nav .search input{
+        font-size: 8px;
+    }
+    .song nav .search .bi {
+        font-size: 9px;
+        padding: 4px 0px 0px 12px;
+    }
+}

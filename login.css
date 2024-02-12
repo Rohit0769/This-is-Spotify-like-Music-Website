@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.left {
+    width: 34%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+header .right {
+    width: 66%;
+    background-color: #0b1320;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+header .right img {
+    width: 88%;
+    height: 88%;
+    z-index: 99;
+}
+
+h1 {
+    position: relative;
+    bottom: 44px;
+    left: 111px;
+}
+
+
+.container {
+    margin: 30px auto;
+    display: flex;
+    height: 100%;
+    padding-bottom: 5vh;
+    flex-direction: column;
+    background-color: #ffffff;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+.btn {
+    display: block;
+    margin: auto;
+    padding: 10px 25px;
+    width: 61%;
+    color: white;
+    position: relative;
+    bottom: 20px;
+    background-color: rgb(38, 47, 216);
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.btn a {
+    font-family: 202px;
+}
+
+
+.btn:hover {
+    background-color: rgb(6, 6, 78);
+}
+
+
+input,
+textarea {
+    display: block;
+    font-family: 'Playpen Sans', cursive;
+    position: relative;
+    bottom: 33px;
+    margin: 12px auto;
+    padding: 11px 14px;
+    width: 55%;
+    border: 1px solid rgb(63, 91, 96);
+}
+
+.check {
+    display: flex;
+    position: relative;
+    left: 88px;
+}
+
+
+.check input {
+    margin: 2px;
+    width: 5%;
+    padding: 0;
+    bottom: 0;
+}
+
+span {
+    position: relative;
+    left: 100px;
+    top: 22px;
+}
+
+span a {
+    text-decoration: none;
+    color: blue;
+}
+
+@media screen and (max-width:800px) {
+    header {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    header .right {
+        display: none;
+    }
+
+    header .right img {
+        display: none;
+    }
+
+    h1 {
+        left: 11px;
+    }
+
+    span {
+        position: relative;
+        left: -69px;
+        display: block;
+        width: 150%;
+        top: 22px;
+    }
+
+    input,
+    textarea {
+        display: block;
+        bottom: 33px;
+        right: 69px;
+        margin: 12px auto;
+        padding: 11px 22px;
+        width: 169%;
+        border: 1px solid rgb(63, 91, 96);
+    }
+
+    .btn {
+        display: block;
+        margin: auto;
+        padding: 10px 25px;
+        width: 82%;
+        color: white;
+        position: relative;
+        bottom: 20px;
+        background-color: rgb(38, 47, 216);
+        border: 1px solid white;
+        cursor: pointer;
+    }
+
+    .check input {
+        margin: -60px;
+        width: 8%;
+    }
+
+    .check {
+        display: flex;
+        position: relative;
+        left: 60px;
+    }
+}
